@@ -1,0 +1,24 @@
+from pytube import YouTube
+
+# YouTube video URL
+url = input("Enter the YouTube video URL: ")
+
+# Creating a YouTube object
+yt = YouTube(url)
+
+# Video title
+print("Title:", yt.title)
+
+# Video thumbnail
+print("Thumbnail URL:", yt.thumbnail_url)
+
+# Video duration
+print("Duration:", yt.length, "seconds")
+
+# Selecting the highest resolution stream
+stream = yt.streams.get_highest_resolution()
+
+# Downloading the video to the current working directory
+print("Downloading...")
+stream.download()
+print("Download completed!")
