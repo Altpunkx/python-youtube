@@ -1,6 +1,6 @@
 from pytube import YouTube
 
-# YouTube video URL
+# YouTube  video URL
 url = input("Enter the YouTube video URL: ")
 
 # Creating a YouTube object
