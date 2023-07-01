@@ -12,6 +12,7 @@ print("Title:", yt.title)
 # Video thumbnail
 print("Thumbnail URL:", yt.thumbnail_url)
 
+
 # Video duration
 print("Duration:", yt.length, "seconds")
 
