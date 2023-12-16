@@ -3,7 +3,7 @@ from pytube import YouTube
 # YouTube  video URL
 url = input("Enter the YouTube video URL: ")
 
-# Creating a YouTube object
+# Creating the YouTube object
 yt = YouTube(url)
 
 # Video title
